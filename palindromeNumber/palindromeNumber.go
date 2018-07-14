@@ -1,5 +1,6 @@
 package palindromeNumber
 
+// 解法一：官方推挤，将数字去半截在逆转后半部分 进行对比
 func IsPalindrome(x int) bool {
 	if x < 0 || (x%10 == 0 && x != 0) {
 		return false
@@ -17,4 +18,18 @@ func IsPalindrome(x int) bool {
 	// 由于处于中位的数字不影响回文（它总是与自己相等），所以我们可以简单地将其去除。
 	return x == revertedNumber || x == revertedNumber/10
 
+}
+
+// 解法二：取全进来的数字整体进行逆转 进行对比
+func isPalindrome2(x int) bool {
+	if x < 0 {
+		return false
+	}
+	tmp := x
+	var result int
+	for tmp > 0 {
+		result = result*10 + (tmp % 10)
+		tmp /= 10
+	}
+	return result == x
 }
