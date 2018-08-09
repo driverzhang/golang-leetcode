@@ -12,3 +12,4 @@ golang for leetcode (用go语言，记录LeetCode上的题目解法分析等)
 |26|[Remove Duplicates from Sorted Array](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/description/) | [Go](/26.removeDuplicates/removeDuplicates.go)|Easy|
 |9|[Palindrome Number](https://leetcode-cn.com/problems/palindrome-number/description/) | [Go](/9.palindromeNumber/palindromeNumber.go)|Easy|
 |7|[Reverse Integer](https://leetcode-cn.com/problems/reverse-integer/description/) | [Go](/7.reverseInteger/reverseInteger.go)|Easy|
+|104|[Maximum Depth of Binary Tree](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/description/) | [Go](/104.maximumDepthofBinaryTree/maximumDepthofBinaryTree.go)|Easy|
