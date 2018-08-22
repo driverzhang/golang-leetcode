@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"gitHub/golang-leetcode/longestSubstring"
+
+	longestSubstring "gitHub/golang-leetcode/3.longestSubstring"
 )
 
 func main() {
