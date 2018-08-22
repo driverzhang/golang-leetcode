@@ -8,27 +8,32 @@ func threeSum(nums []int) [][]int {
 	var ret [][]int
 	sort.Ints(nums) // 排序很重要 [-4, -1, -1, 0, 1, 2]
 
-	for i := 0; i < len(nums)-2; i++ {
-		if i > 0 && nums[i-1] == nums[i] { // 排除除了第一个元素外的重复元素
+	for first := 0; first < len(nums)-2; first++ {
+		firstNum := nums[first]
+
+		if first > 0 && nums[first-1] == firstNum { // 排除除了第一个元素外的重复元素
 			continue
 		}
-		j, k := i+1, len(nums)-1 // 1, 5
+		second, last := first+1, len(nums)-1 // 1, 5
 
-		for j < k {
+		for second < last {
+			secondNum, lastNums := nums[second], nums[last]
+			sum := firstNum + secondNum + lastNums
+
 			// 首次不会进去
-			if j > i+1 && nums[j] == nums[j-1] {
-				j++
+			if second > first+1 && secondNum == nums[second-1] {
+				second++
 				continue
 			}
 
-			if nums[i]+nums[j]+nums[k] == 0 {
-				ret = append(ret, []int{nums[i], nums[j], nums[k]})
-				j++
-				k--
-			} else if nums[i]+nums[j]+nums[k] < 0 {
-				j++
+			if sum == 0 {
+				ret = append(ret, []int{firstNum, secondNum, lastNums})
+				second++
+				last--
+			} else if sum < 0 {
+				second++
 			} else {
-				k--
+				last--
 			}
 		}
 	}
