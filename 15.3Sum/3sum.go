@@ -4,6 +4,24 @@ import (
 	"sort"
 )
 
+// func fourSum(nums []int, target int) [][]int {
+// 	var resp [][]int
+// 	sort.Ints(nums)
+// 	first := 0
+// 	secend := first + 1
+// 	threeth := secend + 1
+// 	last := len(nums) - 1
+
+// 	firstNum, secendNum, threethNum, lastNum := nums[first], nums[secend], nums[threeth], nums[last]
+
+// 	for ; first <= last-1; first++ {
+
+// 	}
+
+// 	return resp
+
+// }
+
 func threeSum(nums []int) [][]int {
 	var ret [][]int
 	sort.Ints(nums) // 排序很重要 [-4, -1, -1, 0, 1, 2]

@@ -1,7 +1,5 @@
 package twoSum
 
-import "go.zhuzi.me/go/log"
-
 // myself
 // 两遍 哈希表
 func TwoSum12(nums []int, target int) []int {
@@ -27,7 +25,7 @@ func TwoSum12(nums []int, target int) []int {
 func TwoSum4(nums []int, target int) []int { // [3,2,4] 6
 	result := make([]int, 2)
 	m := make(map[int]int)
-	log.Error(m)
+
 	for i, v := range nums {
 		if _, ok := m[target-v]; ok { // m[3] m[4] m[2]
 			result[1] = i
