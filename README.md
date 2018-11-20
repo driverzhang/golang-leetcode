@@ -15,3 +15,6 @@ golang for leetcode (用go语言，记录LeetCode上的题目解法分析等)
 |104|[Maximum Depth of Binary Tree](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/description/) | [Go](/104.maximumDepthofBinaryTree/maximumDepthofBinaryTree.go)|Easy|
 |15|[3Sum](https://leetcode-cn.com/problems/3sum/description/) | [Go](/15.3Sum/3sum.go)|Medium|
 |709|[To Lower Case](https://leetcode-cn.com/problems/to-lower-case/description/) | [Go](/709.toLower/toLower.go)|Easy|
+|709|[Reverse Linked List](https://leetcode-cn.com/problems/reverse-linked-list/description/) | [Go](/206.reverseLinkedList/reverseLinkedList.go)|Easy|
+
+
